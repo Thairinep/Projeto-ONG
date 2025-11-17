@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - ONG Amigo Fiel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">ONG Amigo Fiel</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projetos.html">Projetos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="cadastro.html">Cadastro</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <h1 class="text-center mb-4">Formulário de Cadastro</h1>
+                <p class="text-center lead mb-4">Preencha seus dados para se tornar um voluntário ou doador.</p>
+                <img src="img/banner-cadastro.jpg" alt="Banner com vários cães e gatos olhando para a câmera" class="img-fluid rounded mb-4">
+                
+                <form class="needs-validation" novalidate>
+                    <fieldset class="border p-3 mb-4 rounded">
+                        <legend class="float-none w-auto px-3 h5">Dados Pessoais</legend>
+                        
+                        <div class="mb-3">
+                            <label for="nomeCompleto" class="form-label">Nome Completo</label>
+                            <input type="text" class="form-control" id="nomeCompleto" required>
+                            <div class="invalid-feedback">
+                                Por favor, insira seu nome completo.
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                                <div class="invalid-feedback">
+                                    Por favor, insira um email válido.
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="nascimento" class="form-label">Data de Nascimento</label>
+                                <input type="date" class="form-control" id="nascimento" required>
+                                <div class="invalid-feedback">
+                                    Por favor, insira sua data de nascimento.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="cpf" class="form-label">CPF</label>
+                                <input type="text" class="form-control" id="cpf" placeholder="000.000.000-00" maxlength="14" required>
+                                <div class="invalid-feedback">
+                                    Por favor, insira um CPF válido.
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="telefone" class="form-label">Telefone</label>
+                                <input type="tel" class="form-control" id="telefone" placeholder="(00) 00000-0000" maxlength="15" required>
+                                <div class="invalid-feedback">
+                                    Por favor, insira um telefone válido.
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="border p-3 mb-4 rounded">
+                        <legend class="float-none w-auto px-3 h5">Endereço</legend>
+
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <label for="cep" class="form-label">CEP</label>
+                                <input type="text" class="form-control" id="cep" placeholder="00000-000" maxlength="9" required>
+                                <div class="invalid-feedback">
+                                    Por favor, insira um CEP válido.
+                                </div>
+                            </div>
+                            <div class="col-md-8 mb-3">
+                                <label for="endereco" class="form-label">Endereço (Rua e Número)</label>
+                                <input type="text" class="form-control" id="endereco" required>
+                                <div class="invalid-feedback">
+                                    Por favor, insira seu endereço.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="cidade" class="form-label">Cidade</label>
+                                <input type="text" class="form-control" id="cidade" required>
+                                <div class="invalid-feedback">
+                                    Por favor, insira sua cidade.
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="estado" class="form-label">Estado</label>
+                                <select class="form-select" id="estado" required>
+                                    <option value="" disabled selected>Selecione...</option>
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Por favor, selecione seu estado.
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div class="d-grid">
+                        <button class="btn btn-primary btn-lg" type="submit">Enviar Cadastro</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 ONG Amigo Fiel. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <script>
+        (function () {
+          'use strict'
+          var forms = document.querySelectorAll('.needs-validation')
+          Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+              form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                  event.preventDefault()
+                  event.stopPropagation()
+                }
+                form.classList.add('was-validated')
+              }, false)
+            })
+        })()
+
+        function formatInput(element, format) {
+            element.addEventListener('input', function(e) {
+                let value = e.target.value.replace(/\D/g, '');
+                let formattedValue = '';
+                let formatIndex = 0;
+
+                for (let i = 0; i < value.length && formatIndex < format.length; i++) {
+                    if (format[formatIndex] === '#') {
+                        formattedValue += value[i];
+                        formatIndex++;
+                    } else {
+                        formattedValue += format[formatIndex];
+                        formatIndex++;
+                        i--;
+                    }
+                }
+                e.target.value = formattedValue;
+            });
+        }
+
+        formatInput(document.getElementById('cpf'), '###.###.###-##');
+        formatInput(document.getElementById('telefone'), '(##) #####-####');
+        formatInput(document.getElementById('cep'), '#####-###');
+    </script>
+</body>
+</html>
