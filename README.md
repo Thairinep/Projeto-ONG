@@ -1,5 +1,5 @@
 Plataforma Web - ONG Amigo Fiel
-Este projeto é a Primeira Entrega (Entrega 1) da disciplina de Desenvolvimento Web do curso de Análise e Desenvolvimento de Sistemas. O objetivo é construir uma plataforma web profissional para a "ONG Amigo Fiel", uma organização focada em cuidados e adoção de animais.
+O objetivo é construir uma plataforma web profissional para a "ONG Amigo Fiel", uma organização focada em cuidados e adoção de animais.
 
 Esta primeira fase concentra-se na aplicação dos fundamentos de HTML5 Semântico, criação de formulários complexos e implementação de um design responsivo inicial utilizando Bootstrap 5.
 
